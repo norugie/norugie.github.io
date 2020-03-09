@@ -512,6 +512,10 @@ section.my-work .section-heading {
     cursor: pointer;
 }
 
+.isotope-toolbar input[type="radio"]:checked+span {
+    border-bottom: 2px solid #fff;
+}
+
 .isotope-box {
     position: relative;
     width: 100%;
