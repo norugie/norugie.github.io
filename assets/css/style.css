@@ -8,6 +8,7 @@ https://templatemo.com/tm-531-reflux
 
 @import url(fontawesome.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -511,11 +512,6 @@ section.my-work .section-heading {
     cursor: pointer;
 }
 
-.isotope-toolbar input[type="radio"]:checked+span {
-    color: #a278b5;
-    border-bottom: 2px solid #a278b5;
-}
-
 .isotope-box {
     position: relative;
     width: 100%;
@@ -598,7 +594,7 @@ figure.snip1321 span {
 }
 
 figure.snip1321 i {
-    position: relative!important;
+    position: relative !important;
     font-size: 18px;
     background-color: #a278b5;
     width: 40px;
@@ -705,6 +701,7 @@ section.contact-me {
     .menu {
         left: 5%;
     }
+
     .section {
         color: #fff;
         width: 65%;
@@ -719,9 +716,11 @@ section.contact-me {
         height: 36px;
         line-height: 36px;
     }
+
     .menu .social-network ul li {
         margin: 0;
     }
+
     .menu .image {
         margin-top: 60px;
     }
@@ -731,14 +730,17 @@ section.contact-me {
     .menu {
         left: 0%;
     }
+
     .right-image-post h4,
     .left-image-post h4 {
         margin-top: 0px;
     }
+
     .right-image-post p,
     .left-image-post p {
         margin-top: 15px;
     }
+
     .right-image-post .white-button,
     .left-image-post .white-button {
         margin-top: 25px;
@@ -762,10 +764,12 @@ section.contact-me {
 }
 
 @media screen and (max-width: 845px) {
+
     #menu-toggle,
     #menu-close {
         display: inline-block;
     }
+
     .menu {
         width: 320px;
         -webkit-transform: translateX(-100%) !important;
@@ -774,50 +778,63 @@ section.contact-me {
         transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
         transition: transform 233ms cubic-bezier(0, 0, 0.21, 1), -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
     }
+
     .menu .image {
         margin-top: 40px;
     }
+
     .menu .image img {
         width: 120px;
         height: 120px;
     }
+
     .menu .author-content {
         margin-top: 20px;
     }
+
     .menu .container {
         padding-left: 15px;
         padding-right: 15px;
     }
+
     .menu.open {
         display: inline-block;
         -webkit-transform: translateX(0) !important;
         transform: translateX(0) !important;
     }
+
     .responsive-nav {
         display: inline-block;
     }
+
     .section {
         width: 94%;
         right: 3%;
         left: 3%;
     }
+
     .isotope-item {
         width: 94%;
         margin: 3%;
     }
+
     .left-image-post img {
         margin-bottom: 30px;
     }
+
     .right-image-post img {
         margin-top: 30px;
     }
+
     .isotope-item {
         border-bottom: none;
         text-align: center;
     }
+
     .isotope-toolbar {
         margin-bottom: 20px;
     }
+
     .menu .copyright-text {
         position: relative;
         margin-top: 60px;
