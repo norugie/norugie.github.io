@@ -311,7 +311,7 @@ html {
 
 .section-heading {
     text-align: center;
-    padding: 80px 30px;
+    padding: 50px 30px;
 }
 
 .section-heading h2 {
@@ -451,11 +451,6 @@ button:hover {
 
 
 /* My Works */
-
-section.my-work .section-heading {
-    text-align: center;
-    padding: 80px 45px 50px 45px;
-}
 
 .isotope-wrapper {
     position: relative;
