@@ -375,37 +375,37 @@ button:hover {
     color: #fff;
 }
 
-
-/* Left & Right Post */
-
-.right-image-post {
-    margin-top: 60px;
-    padding-top: 60px;
-    border-top: 2px solid rgba(250, 250, 250, 0.1);
+a[data-tooltip] {
+    position: relative;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
 }
 
-.left-image img,
-.right-image img {
+a[data-tooltip]::after {
+    position: absolute;
+    content: attr(data-tooltip);
+    display: block;
+    position: absolute;
+    background-color: dimgrey;
+    margin-bottom: -30px;
+    padding: 3px 5px;
+    color: white;
     border-radius: 5px;
+    font-size: 12px;
+    left: -50%;
+    bottom: 0;
+    white-space: nowrap;
+    transform: scale(0);
+    transition: transform ease-out 150ms, bottom ease-out 150ms;
 }
 
-.right-image-post h4,
-.left-image-post h4 {
-    margin-top: 30px;
-}
-
-.right-image-post p,
-.left-image-post p {
-    margin-top: 20px;
-}
-
-.right-image-post .white-button,
-.left-image-post .white-button {
-    margin-top: 30px;
+a[data-tooltip]:hover::after {
+    transform: scale(1);
+    bottom: 200%;
 }
 
 
-/* Professional Stack */
+/* About and Professional Stack */
 
 .my-services .col-md-6 {
     padding-left: 5px;
@@ -437,16 +437,6 @@ button:hover {
 
 .service-item:hover p {
     color: #4a4a4a;
-}
-
-.service-item .service-icon {
-    width: 70px;
-    height: 70px;
-    display: inline-block;
-    margin-bottom: 30px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    transition: all 0.5s;
 }
 
 
@@ -523,21 +513,21 @@ button:hover {
     min-height: 60px;
 }
 
-figure.snip1321 {
+figure.figure-snip {
     overflow: hidden;
     text-align: center;
     -webkit-perspective: 50em;
     perspective: 50em;
 }
 
-figure.snip1321 * {
+figure.figure-snip * {
     -webkit-box-sizing: padding-box;
     box-sizing: padding-box;
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
 }
 
-figure.snip1321 figcaption {
+figure.figure-snip figcaption {
     top: 50%;
     left: 10px;
     right: 10px;
@@ -546,20 +536,20 @@ figure.snip1321 figcaption {
     z-index: 1;
 }
 
-figure.snip1321 h5 {
+figure.figure-snip h5 {
     margin-top: 15px;
     margin-bottom: 5px;
     color: #232323;
 }
 
-figure.snip1321 span {
+figure.figure-snip span {
     font-size: 15px;
     font-style: italic;
     display: block;
     color: #232323;
 }
 
-figure.snip1321 i {
+figure.figure-snip i {
     position: relative !important;
     font-size: 18px;
     background-color: #a278b5;
@@ -572,15 +562,15 @@ figure.snip1321 i {
     color: #fff;
 }
 
-figure.snip1321:after {
+figure.figure-snip:after {
     background-color: #fff;
     position: absolute;
     content: "";
     display: block;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    bottom: 20px;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     -webkit-transform: rotateX(-90deg);
@@ -591,7 +581,7 @@ figure.snip1321:after {
     opacity: 0;
 }
 
-figure.snip1321 a {
+figure.figure-snip a {
     left: 0;
     right: 0;
     top: 0;
@@ -599,8 +589,8 @@ figure.snip1321 a {
     z-index: 1;
 }
 
-figure.snip1321:hover figcaption,
-figure.snip1321.hover figcaption {
+figure.figure-snip:hover figcaption,
+figure.figure-snip.hover figcaption {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     opacity: 1;
@@ -608,8 +598,8 @@ figure.snip1321.hover figcaption {
     transition-delay: 0.2s;
 }
 
-figure.snip1321:hover:after,
-figure.snip1321.hover:after {
+figure.figure-snip:hover:after,
+figure.figure-snip.hover:after {
     -webkit-transform: rotateX(0);
     transform: rotateX(0);
     opacity: 0.9;
@@ -736,7 +726,7 @@ figure.snip1321.hover:after {
         position: relative;
         margin-top: 60px;
     }
-    figure.snip1321 span {
+    figure.figure-snip span {
         font-size: 12px;
         font-style: italic;
         display: block;
