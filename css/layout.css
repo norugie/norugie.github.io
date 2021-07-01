@@ -1370,6 +1370,8 @@
 .mfp-wrap.popup-box-inline .image img {
     width: 100%;
     height: auto;
+    max-height: 400px;
+    object-fit: scale-down;
 }
 
 .mfp-wrap.popup-box-inline .desc {
@@ -1384,6 +1386,7 @@
 .mfp-wrap.popup-box-inline .desc .button {
     height: 30px;
     line-height: 30px;
+    margin: 25px 0;
 }
 
 @media (max-width: 720px) {
